@@ -1,0 +1,413 @@
+/* VENEZOLANA DE INDUSTRIA TECNOLOGICA - WEB */
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+/*BODY*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*MODAL LOGIN*/
+
+.modal-login a {
+    color: #008AC8;
+    font-weight: 400;
+}
+
+
+/*HEADER*/
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.banner .single-item {
+    width: 100%;
+}
+
+.banner-item {
+    width: 100%;
+}
+
+.banner-item img {
+    object-position: right;
+    object-fit: cover;
+    width: 100%;
+}
+
+.banner-text {
+    left: 10%;
+    position: absolute;
+    top: 40%;
+    width: 30%;
+    z-index: 99;
+}
+
+.navbar-botton {
+    width: 100%;
+    z-index: 999999;
+}
+
+.navbar-botton a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-nav {
+    background: transparent;
+}
+
+.navbar-logo {
+    background: url(../img/logo-off.png);
+    background-size: contain;
+    height: 60px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navbar-logo.active {
+    background: url(../img/logo-on.png);
+    background-size: contain;
+    height: 60px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*SERVICES*/
+
+.container-services {
+    background: #008AC8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.card-services {
+    height: 20rem;
+}
+
+.card-services p {
+    font-size: 12px;
+}
+
+.card-img-services {
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+.card-img-services img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*SALES*/
+
+.container-sales {
+    width: 100%;
+}
+
+.container-sales img {
+    height: 450px;
+    object-fit: contain;
+    object-position: center;
+    width: 450px;
+}
+
+.nav-sales {
+    padding-inline-start: 0px;
+}
+
+.nav-sales li {
+    list-style: none;
+}
+
+.nav-sales a {
+    color: var(--black-4);
+    text-decoration: none;
+}
+
+
+/*REPAIR*/
+
+.repair-section {
+    background-image: url(../img/fondo-repair.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.card-technical-support {
+    height: 125px;
+}
+
+.card-icon i {
+    font-size: 40px;
+}
+
+
+/*SUPPORT*/
+
+.container-support {
+    width: 100%;
+}
+
+.container-support img {
+    height: 450px;
+    object-fit: contain;
+    object-position: center;
+    width: 450px;
+}
+
+.nav-support {
+    padding-inline-start: 0px;
+}
+
+.nav-support li {
+    list-style: none;
+}
+
+.nav-support a {
+    color: var(--black-4);
+    text-decoration: none;
+}
+
+
+/*ABOUT US*/
+
+.section-about-us {
+    background-image: url(../img/fondo-about-us.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.section-about-us {
+    color: white;
+}
+
+
+/*PRODUCTS*/
+
+.section-products {
+    width: 100%;
+}
+
+.products-card-container {
+    text-decoration: none;
+}
+
+.products-card-container:hover {
+    text-decoration: none;
+}
+
+.card-products {
+    height: 28rem;
+}
+
+.card-products p {
+    color: black;
+    font-size: 14px;
+}
+
+.card-products h5 {
+    color: black;
+}
+
+.card-img {
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+.card-img img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+.quantify input {
+    width: 40px;
+}
+
+
+/*CATEGORY*/
+
+.section-category {
+    background: #39748E;
+}
+
+.section-category a {
+    text-decoration: none;
+}
+
+
+/*CONTACT*/
+
+.container-contact {
+    width: 100%;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background: url(../img/fondo-about-us.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer i {
+    font-size: 16px;
+}
+
+.footer-above i {
+    font-size: 28px;
+}
+
+.icon-rs i {
+    font-size: 22px;
+}
+
+
+/*WEB REGISTRY*/
+
+.body {
+    background-color: #f1f3fa;
+}
+
+
+/*WEB PASSWORD RECOVERY*/
+
+
+/*WEB CATEGORY*/
+
+.container-category h4 {
+    text-transform: uppercase;
+}
+
+
+/*WEB PRODUCTS DETAIL*/
+
+.slider-for {
+    width: 100%;
+}
+
+.slider-img {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-img img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+.slider-nav {
+    width: 100%;
+}
+
+.slider-nav-item {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-nav-item img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+
+/*SHOPPING CART*/
+
+.container-cart .ul-accion {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0%;
+}
+
+.container-cart .ul-accion li {
+    margin: 2px 2px;
+}
+
+.container-cart .icon-accion {
+    color: white;
+    background: #008AC8;
+    padding: 4px;
+}
+
+
+/*WEB PAYMENT FORM*/
+
+.container-form thead {
+    background: #f1f3fa;
+    border: none;
+}
+
+.container-form p {
+    font-size: 14px;
+}
+
+
+/*WEB PROFILE*/
+
+.list-group-item.active {
+    background: #008AC8;
+}
+
+
+/*WEB ABOUT US*/
+
+.container-about-us img {
+    object-position: center;
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 520px) {
+    .slick-prev {
+        left: -5px;
+    }
+    [dir='rtl'] .slick-prev {
+        right: -5px;
+        left: auto;
+    }
+    .slick-next {
+        right: -5px;
+    }
+    [dir='rtl'] .slick-next {
+        right: auto;
+        left: -5px;
+    }
+}

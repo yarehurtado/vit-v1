@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulario de Pago - VIT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-web.css">
+
+</head>
+
+<body class="body">
+
+    <!-- modal -->
+    <div class="modal fade modal-login" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="mr-2 mt-2">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- end modal header -->
+                <!-- modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h4 class="modal-title text-center">Inicio de Sesión</h4>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <label for="email-user">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email-user" name="email-user" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <label for="user-password">Contraseña</label>
+                                <input type="password" class="form-control" id="user-password" name="user-password" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <p>¿No tienes cuenta?<a href="web-registry-user.html">Regístrate aquí</a></p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary" type="submit">Ingresar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="web-password.html">¿Has olvidado tu contraseña?</a>
+                    </div>
+                </div>
+                <!-- end modal body -->
+            </div>
+        </div>
+    </div>
+    <!--end modal-->
+
+    <!--header-->
+    <header id="index" class="header">
+        <!--nabvar-->
+        <div class="navbar-botton">
+            <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-on.png" width="80" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-about-us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Todo en uno</a>
+                                <a class="dropdown-item" href="#">Escritorio</a>
+                                <a class="dropdown-item" href="#">Servidores</a>
+                                <a class="dropdown-item" href="#">Portatiles</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-sales.html">Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-support.html">Soporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-shopping-cart.html"><i class="fab fa-opencart"></i> Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-nav" href="#" data-toggle="modal" data-target="#myModal"><i class="far fa-user"></i> Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--end nabvar-->
+    </header>
+    <!--end header-->
+
+    <!--container-form-->
+    <section class="container-form pt-5 pb-5 mt-5">
+        <div class="container">
+            <div class="row p-5 mt-5 ml-3 mr-3 bg-white d-flex flex-wrap-reverse">
+                <!--content-form-->
+                <div class="col-md-7">
+                    <div class="row mb-3">
+                        <div class="col-md-12 ">
+                            <h3>Formulario de Pago</h3>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <h6>Detalles del Pago</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="m-payment">Método de Pago</label>
+                                        <select class="form-control" id="m-payment" name="m-payment" required>
+                                                <option selected disabled value="">Seleccionar...</option>
+                                                <option>Opción 1</option>
+                                                <option>Opción 2</option>
+                                                <option>Opción 3</option>
+                                            </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="date">Fecha Transacción</label>
+                                        <input type="date" class="form-control" id="date" name="date" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="bank">Banco</label>
+                                        <select class="form-control" id="bank" name="bank" required>
+                                                <option selected disabled value="">Seleccionar...</option>
+                                                <option>Opción 1</option>
+                                                <option>Opción 2</option>
+                                                <option>Opción 3</option>
+                                            </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="reference">N° Recibo / Referencia</label>
+                                        <input type="text" class="form-control" id="reference" name="reference" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="doc-type">Tipo de Documento</label>
+                                        <select class="form-control" id="doc-type" name="doc-type" required>
+                                                <option selected disabled value="">Seleccionar...</option>
+                                                <option>J-</option>
+                                                <option>R-</option>
+                                                <option>V-</option>
+                                            </select>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="doc">N° Documento</label>
+                                        <input type="text" class="form-control" id="doc" name="doc" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 mb-3">
+                                        <label for="name">Nombre Completo del Titular</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 mb-3 ml-1">
+                                        <input type="file" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" class="custom-file-input" id="customFile" lang="es" name="voucher" required>
+                                        <label class="custom-file-label" for="customFileLang">Insertar Comprobante</label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 mb-3">
+                                        <button class="btn btn-primary" type="submit">Procesar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--end content-form-->
+                <!--content-->
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h3>Resumen de Compra</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h6>Tú orden</h6>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 mb-3">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">SubTotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row"><img src="img/M2100.png" class="mr-3 img-table" width="50" height="50" alt=""></td>
+                                            <td>Producto A</td>
+                                            <td>600</td>
+                                            <td>6,000000 P</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="img/M2100.png" class="mr-3 img-table" width="50" height="50" alt=""></td>
+                                            <td>Producto B</td>
+                                            <td>600</td>
+                                            <td>6,000000 P</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="img/M2100.png" class="mr-3 img-table" width="50" height="50" alt=""></td>
+                                            <td>Producto C</td>
+                                            <td>600</td>
+                                            <td>6,000000 P</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h6>Total a pagar</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Total</th>
+                                            <th scope="col">SubTotal</th>
+                                            <th scope="col">Equivalente (BS)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>6,000000 P</td>
+                                            <td>6,000000 P</td>
+                                            <td>6,000000000 Bs</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h6>Método de pago</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h6>Transferencia Bancaria Directa</h6>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Banco: Banesco</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Cuenta Corriente: xxxx-xxxx-xx-xxxxxx-xxxx</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>VENEZOLANA DE INDUSTRIA TECNOLÓGICA CA</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>RIF: J-00000000-0</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12 mb-3">
+                            <h6>Pago móvil</h6>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Banco: Banesco</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Teléfono: (+58)-04160000000</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>RIF: J-00000000-0</p>
+                        </div>
+                    </div>
+                </div>
+                <!--end content-->
+            </div>
+            <!--content-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end container-form-->
+
+    <!--footer-->
+    <footer id="footer" class="footer text-light d-flex align-items-center justify-content-center pt-5 pb-5 ">
+        <div class="container ">
+            <!--footer top-->
+            <div class="row text-justify pt-5 ">
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Venezolana de Industria Tecnológica</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p>Somos la principal industria productora de herramientas tecnológicas de Venezuela, producimos herramientas tecnológicas personales y soluciones informáticas de alta gama. </p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 icon-rs mb-3">
+                            <i class="fab fa-facebook "></i>
+                            <i class="fab fa-instagram pl-2 "></i>
+                            <i class="fab fa-youtube pl-2 "></i>
+                            <i class="fab fa-twitter pl-2 "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Contáctanos</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">Paraguaná. Edo Falcón</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0269-2487694 / 0269-2462500</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">San Antonio. Edo Miranda</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0212-3731554</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">Chuao. Distrito Capital</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt"></i>
+                            <p class="pl-1 ">(+58) 0212-9597138</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <p><strong>Explorar</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <p><a href="web-about-us.html">Sobre Nosotros</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <p><a href="#" data-toggle="modal" data-target="#myModal">Iniciar Sesión</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="web-registry-user.html">Regitrarse</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Soporte</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0800-4636848</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <i class="fas fa-envelope "></i>
+                            <a href="mailto:atencionalcliente@vit.gob.ve ">atencionalcliente@vit.gob.ve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end footer top-->
+            <!--footer botttonp-->
+            <div class="row footer-above pt-5 ">
+                <div class="col-md-10 text-left ">
+                    <p>&copy; 2020 Venezolana de Industria Tecnológica</p>
+                </div>
+                <div class="col-md-2 text-right ">
+                    <p><a href="#" class="mr-0 btn-above"><i class="far fa-caret-square-up "></i></a></p>
+                </div>
+            </div>
+            <!--end footer botttonp-->
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+
+</body>
+
+</html>

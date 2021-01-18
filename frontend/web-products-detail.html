@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Productos - VIT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/styles-web.css">
+
+
+</head>
+
+<body class="body">
+
+    <!-- modal -->
+    <div class="modal fade modal-login" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="mr-2 mt-2">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- end modal header -->
+                <!-- modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h4 class="modal-title text-center">Inicio de Sesión</h4>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <label for="email-user">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email-user" name="email-user" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <label for="user-password">Contraseña</label>
+                                <input type="password" class="form-control" id="user-password" name="user-password" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <p>¿No tienes cuenta?<a href="web-registry-user.html">Regístrate aquí</a></p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary" type="submit">Ingresar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="web-password.html">¿Has olvidado tu contraseña?</a>
+                    </div>
+                </div>
+                <!-- end modal body -->
+            </div>
+        </div>
+    </div>
+    <!--end modal-->
+
+    <!--header-->
+    <header id="index" class="header">
+        <!--nabvar-->
+        <div class="navbar-botton">
+            <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-on.png" width="80" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-about-us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Todo en uno</a>
+                                <a class="dropdown-item" href="#">Escritorio</a>
+                                <a class="dropdown-item" href="#">Servidores</a>
+                                <a class="dropdown-item" href="#">Portatiles</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-sales.html">Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-support.html">Soporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-shopping-cart.html"><i class="fab fa-opencart"></i> Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-nav" href="#" data-toggle="modal" data-target="#myModal"><i class="far fa-user"></i> Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--end nabvar-->
+    </header>
+    <!--end header-->
+
+    <!--container-products-->
+    <div class="products-detail pt-5 pb-5 mt-5">
+        <!--container-->
+        <div class="container">
+            <!--content-row-->
+            <div class="row p-5 mt-5 mb-5 bg-white ">
+                <!--content-slider-->
+                <div class="col-md-6 pt-5 pb-5">
+                    <div class="container-slider">
+                        <!-- slider-for -->
+                        <div class="slider-for row">
+                            <div class="col-md-12">
+                                <div class="slider-img">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!--  end slider-img -->
+                            <div class="col-md-12">
+                                <div class="slider-img">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!--  end slider-img -->
+                            <div class="col-md-12">
+                                <div class="slider-img">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!--  end slider-img -->
+                            <div class="col-md-12">
+                                <div class="slider-img">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!--  end slider-img -->
+                        </div>
+                        <!-- end-slider-for -->
+                        <!-- slider-nav -->
+                        <div class="slider-nav row">
+                            <div class="col-md-4">
+                                <div class="slider-nav-item">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!-- end slider_img -->
+                            <div class="col-md-4">
+                                <div class="slider-nav-item">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!-- end slider_img -->
+                            <div class="col-md-4">
+                                <div class="slider-nav-item">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!-- end slider_img -->
+                            <div class="col-md-4">
+                                <div class="slider-nav-item">
+                                    <img src="img/ME2250.png" alt="">
+                                </div>
+                            </div>
+                            <!-- end slider_img -->
+                        </div>
+                        <!-- end-slider-nav -->
+                    </div>
+                    <!-- end-container-slider -->
+                </div>
+                <!--end content-slider-->
+                <!--content-inf-product-->
+                <div class="col-md-6 pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Nombre del Producto</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, facilis?</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6>Caracteristicas</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi iste dolorum nobis fugit ab sapiente quis sed delectus, sint, veritatis laborum optio aspernatur deleniti? Recusandae aliquam error magnam consequatur excepturi
+                                at cupiditate? Minima debitis facilis officia ex sed, eligendi dicta, ipsam voluptatibus facere accusamus fuga sapiente consequatur itaque, provident ut.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>5.000.000 Ptr</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="quantify d-flex align-items-center">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 d-flex align-items-center justify-content-start">
+                                            <button class="btn btn-primary btn-less" id="less-1"><i class="fas fa-minus"></i></button>
+                                            <input type="text" class="form-control text-center btn-quantity" id="quantify-1" value="1">
+                                            <button class="btn btn-primary btn-plus" id="plus-1"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                        <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end">
+                                            <button class="btn btn-primary" type="submit "><i class="fab fa-opencart"></i> Añadir al Carrito</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <a href="web-payment-form.html" class="btn btn-primary">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--content-inf-product-->
+            </div>
+            <!--end content-row-->
+            <!--content footer-->
+            <div class="row p-5 bg-white ">
+                <div class="col-md-12 pb-5 ">
+                    <h5>Productos Relacionados</h5>
+                </div>
+                <div class="row  d-flex justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <a href="#" class="products-card-container">
+                            <div class="card border-0 shadow-sm card-products mb-3">
+                                <div class="card-img">
+                                    <img src="img/T4310.jpg" class="card-img-top" alt="... ">
+                                </div>
+                                <div class="card-body ">
+                                    <p class="card-text text-muted">Categoría - Sub-Categoría</p>
+                                    <h5 class="card-title ">T4320</h5>
+                                    <p class="text-price">$5.000.000 Ptr</p>
+                                    <div class="quantify d-flex">
+                                        <form action="">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4 d-flex align-items-center justify-content-start">
+                                                    <button class="btn btn-primary btn-less" id="less-2"><i class="fas fa-minus"></i></button>
+                                                    <input type="text" class="form-control text-center btn-quantity" id="quantify-2" value="1">
+                                                    <button class="btn btn-primary btn-plus" id="plus-2"><i class="fas fa-plus"></i></button>
+                                                </div>
+                                                <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end">
+                                                    <button class="btn btn-primary" type="submit "><i class="fab fa-opencart"></i> Añadir</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="products-card-container">
+                            <div class="card border-0 shadow-sm card-products mb-3">
+                                <div class="card-img">
+                                    <img src="img/T4310.jpg" class="card-img-top" alt="... ">
+                                </div>
+                                <div class="card-body ">
+                                    <p class="card-text text-muted">Categoría - Sub-Categoría</p>
+                                    <h5 class="card-title ">T4320</h5>
+                                    <p class="text-price">$5.000.000 Ptr</p>
+                                    <div class="quantify d-flex">
+                                        <form action="">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4 d-flex align-items-center justify-content-start ">
+                                                    <button class="btn btn-primary btn-less" id="less-3"><i class="fas fa-minus"></i></button>
+                                                    <input type="text" class="form-control text-center btn-quantity" id="quantify-3" value="1">
+                                                    <button class="btn btn-primary btn-plus" id="plus-3"><i class="fas fa-plus"></i></button>
+                                                </div>
+                                                <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end">
+                                                    <button class="btn btn-primary" type="submit "><i class="fab fa-opencart"></i> Añadir</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="products-card-container">
+                            <div class="card border-0 shadow-sm card-products mb-3">
+                                <div class="card-img">
+                                    <img src="img/T4310.jpg" class="card-img-top" alt="... ">
+                                </div>
+                                <div class="card-body ">
+                                    <p class="card-text text-muted">Categoría - Sub-Categoría</p>
+                                    <h5 class="card-title ">T4320</h5>
+                                    <p class="text-price">$5.000.000 Ptr</p>
+                                    <div class="quantify d-flex">
+                                        <form action="">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4 d-flex align-items-center justify-content-start">
+                                                    <button class="btn btn-primary btn-less" id="less-4"><i class="fas fa-minus"></i></button>
+                                                    <input type="text" class="form-control text-center btn-quantity" id="quantify-4" value="1">
+                                                    <button class="btn btn-primary btn-plus" id="plus-4"><i class="fas fa-plus"></i></button>
+                                                </div>
+                                                <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end">
+                                                    <button class="btn btn-primary" type="submit "><i class="fab fa-opencart"></i> Añadir</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--end content footer-->
+        </div>
+        <!--container-->
+    </div>
+    <!--end container-products-->
+
+    <!--footer-->
+    <footer id="footer" class="footer text-light d-flex align-items-center justify-content-center pt-5 pb-5 ">
+        <div class="container ">
+            <!--footer top-->
+            <div class="row text-justify pt-5 ">
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Venezolana de Industria Tecnológica</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p>Somos la principal industria productora de herramientas tecnológicas de Venezuela, producimos herramientas tecnológicas personales y soluciones informáticas de alta gama. </p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 icon-rs mb-3">
+                            <i class="fab fa-facebook "></i>
+                            <i class="fab fa-instagram pl-2 "></i>
+                            <i class="fab fa-youtube pl-2 "></i>
+                            <i class="fab fa-twitter pl-2 "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Contáctanos</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">Paraguaná. Edo Falcón</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0269-2487694 / 0269-2462500</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">San Antonio. Edo Miranda</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0212-3731554</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">Chuao. Distrito Capital</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0212-9597138</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Explorar</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="# ">Sobre Nosotros</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="# ">Iniciar Sesión</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="# ">Regitrarse</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Soporte</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0800-4636848</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <i class="fas fa-envelope "></i>
+                            <a href="mailto:atencionalcliente@vit.gob.ve ">atencionalcliente@vit.gob.ve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end footer top-->
+            <!--footer botttonp-->
+            <div class="row footer-above pt-5 ">
+                <div class="col-md-10 text-left ">
+                    <p>&copy; 2020 Venezolana de Industria Tecnológica</p>
+                </div>
+                <div class="col-md-2 text-right ">
+                    <p><a href="#" class="mr-0 btn-above"><i class="far fa-caret-square-up "></i></a></p>
+                </div>
+            </div>
+            <!--end footer botttonp-->
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <script type="text/javascript " src="js/jquery-3.5.1.slim.min.js "></script>
+    <script type="text/javascript " src="js/popper.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="js/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript " src="js/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript " src="js/slick.min.js "></script>
+    <script type="text/javascript " src="js/setting.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+
+    <script>
+        $(document).ready(function() {
+            const less = $('.btn-less');
+            const plus = $('.btn-plus');
+            const input = $('.btn-quantity');
+
+            less.click(function(e) {
+                e.preventDefault();
+                var value = input.val();
+                if (value > 1) {
+                    value--;
+                }
+                input.val(value);
+            });
+
+            plus.click(function(e) {
+                e.preventDefault();
+                var value = input.val();
+                value++;
+                input.val(value);
+            })
+        });
+    </script>
+
+</body>
+
+</html>

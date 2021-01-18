@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VIT - El Computador Bolivariano</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/styles-web.css">
+
+</head>
+
+<body>
+
+    <!-- modal -->
+    <div class="modal fade modal-login" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="mr-2 mt-2">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- end modal header -->
+                <!-- modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h4 class="modal-title text-center">Inicio de Sesión</h4>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <label for="email-user">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email-user" name="email-user" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <label for="user-password">Contraseña</label>
+                                <input type="password" class="form-control" id="user-password" name="user-password" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3">
+                                <p>¿No tienes cuenta?<a href="web-registry-user.html">Regístrate aquí</a></p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 mb-3 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-primary" type="submit">Ingresar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="web-password.html">¿Has olvidado tu contraseña?</a>
+                    </div>
+                </div>
+                <!-- end modal body -->
+            </div>
+        </div>
+    </div>
+    <!--end modal-->
+
+    <!--header-->
+    <header id="index" class="header">
+
+        <!--banner-->
+        <div class="banner single-item">
+            <div class="banner-item">
+                <img src="img/banner-4.png" alt="">
+                <div class="banner-text d-none d-sm-none d-md-block">
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos culpa aliquam accusamus enim accusantium doloremque magnam impedit repellat illum! Itaque!</p>
+                    <a class="btn btn-primary" href="">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <!--end banner-->
+
+        <!--nabvar botton-->
+        <div class="navbar-botton">
+            <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand navbar-logo" href="#">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon  "></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-about-us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Todo en uno</a>
+                                <a class="dropdown-item" href="#">Escritorio</a>
+                                <a class="dropdown-item" href="#">Servidores</a>
+                                <a class="dropdown-item" href="#">Portatiles</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-sales.html">Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-support.html">Soporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-shopping-cart.html"><i class="fab fa-opencart"></i> Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-nav" href="#" data-toggle="modal" data-target="#myModal"><i class="far fa-user"></i> Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--end nabvar botton-->
+    </header>
+    <!--end header-->
+
+    <!--services-->
+    <div id="services" class="container-services d-flex justify-content-center align-items-center pb-5 pt-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col md-12 text-center text-white">
+                    <h3>Servicios</h3>
+                </div>
+            </div>
+            <div class="row pt-5 pb-5">
+                <div class="col-md-4 mb-3 ">
+                    <div class="card border-0 shadow-lg card-services ">
+                        <img src="img/Version control-amico.png " class="card-img-top card-img-services " alt="... ">
+                        <div class="card-body text-center ">
+                            <h6 class="card-title pt-0 ">Ventas Institucionales</h6>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 ">
+                    <div class="card border-0 shadow-lg card-services ">
+                        <img src="img/Version control-bro.png " class="card-img-top card-img-services " alt="... ">
+                        <div class="card-body text-center ">
+                            <h6 class="card-title pt-0 ">Esamblaje</h6>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 ">
+                    <div class="card border-0 shadow-lg card-services ">
+                        <img src="img/Version control-pana.png " class="card-img-top card-img-services " alt="... ">
+                        <div class="card-body text-center ">
+                            <h6 class="card-title pt-0 ">Soporte Técnico</h6>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end services-->
+
+    <!--support-->
+    <div id="support " class="container-support d-flex justify-content-center align-items-center pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row pt-5">
+                <div class="col-md-12 text-center pb-5 ">
+                    <h3>Soporte Técnico</h3>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center pb-5">
+                <div class="col-md-6 ">
+                    <h5>Si tu equipo requiere soporte técnico ¿Qué hacer?</h5>
+                    <h5>Servidores</h5>
+                    <ul class="nav-support ">
+                        <li><i class="fas fa-phone-alt pr-2 pb-2 "></i><a href="# ">0800 4636848 / Opción 3</a></li>
+                        <li><i class="fas fa-envelope pr-2 pb-2 "></i><a href="mailto:servidores@vit.gob.ve ">servidores@vit.gob.ve</a></li>
+                    </ul>
+                    <h5>Equipos de Escritorio - Portátiles - Tabletas</h5>
+                    <ul class="nav-support ">
+                        <li><i class="fas fa-phone-alt pr-2 pb-2 "></i><a href="# ">0800 4636848</a></li>
+                        <li><i class="fas fa-envelope pr-2 pb-2 "></i><a href="mailto:atencionalcliente@vit.gob.ve ">atencionalcliente@vit.gob.ve</a></li>
+                        <li><i class="fas fa-globe pr-2 pb-2 "></i><a href="# ">Completa el Formulario</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="img/Version control-pana.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end support-->
+
+    <!--repair-->
+    <div id="repair " class="repair-section d-flex justify-content-center align-items-center pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 text-center ">
+                    <h3 class="mb-3 pt-5 ">¿Quieres reparar tu equipo?</h3>
+                    <h5 class="mb-5 ">¡Sigue estos sencillos pasos!</h5>
+                </div>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center align-items-center ">
+                <div class="col-md-3 ">
+                    <div class="card card-technical-support border-0 shadow-lg mb-3 mr-3 d-flex justify-content-center align-items-center align-middle ">
+                        <div class="row ">
+                            <div class="card-icon col-md-4 d-flex justify-content-center align-items-center ">
+                                <i class="fas fa-mobile-alt "></i>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center align-items-center ">
+                                <h6 class="text-left ">Ingresa al modulo correspondiente</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card card-technical-support border-0 shadow-lg mb-3 mr-3 d-flex justify-content-center align-items-center align-middle ">
+                        <div class="row">
+                            <div class="card-icon col-md-4 d-flex justify-content-center align-items-center ">
+                                <i class="far fa-clipboard "></i>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center align-items-center ">
+                                <h6 class="text-left ">Completa el formulario</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card card-technical-support border-0 shadow-lg mb-3 mr-3 d-flex justify-content-center align-items-center align-middle ">
+                        <div class="row ">
+                            <div class="card-icon col-md-4 d-flex justify-content-center align-items-center ">
+                                <i class="fas fa-search "></i>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center align-items-center ">
+                                <h6 class="text-left ">Evaluaremos el Caso</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center align-items-center ">
+                <div class="col-md-3 ">
+                    <div class="card card-technical-support border-0 shadow-lg mb-3 mr-3 d-flex justify-content-center align-items-center align-middle ">
+                        <div class="row ">
+                            <div class="card-icon col-md-4 d-flex justify-content-center align-items-center ">
+                                <i class="fas fa-car-side "></i>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center align-items-center ">
+                                <h6>Dirigite a la instalación más cercana a tu domicilio</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card card-technical-support border-0 shadow-lg mb-3 mr-3 d-flex justify-content-center align-items-center align-middle ">
+                        <div class="row ">
+                            <div class="card-icon col-md-4 d-flex justify-content-center align-items-center ">
+                                <i class="fas fa-users "></i>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center align-items-center ">
+                                <h6>Sigue las incidencias, en tu perfil</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card card-technical-support border-0 shadow-lg mb-3 mr-3 d-flex justify-content-center align-items-center align-middle ">
+                        <div class="row ">
+                            <div class="card-icon col-md-4 d-flex justify-content-center align-items-center ">
+                                <i class="fas fa-people-carry "></i>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center align-items-center ">
+                                <h6>Retira tu equipo en nuestras instalaciones</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 d-flex justify-content-center align-items-center pb-5 pt-5 ">
+                    <a href="web-support.html " class="btn btn-dark ">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end repair-->
+
+    <!--sales-->
+    <div id="sales " class="container-sales d-flex justify-content-center align-items-center pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 text-center pb-5 pt-5">
+                    <h3>Ventas Institucionales</h3>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center pb-5">
+                <div class="col-md-6 ">
+                    <img src="img/Version control-amico.png " alt=" ">
+                </div>
+                <div class="col-md-6 ">
+                    <p class="text-justify pb-2 ">Para solicitar ventas a la administración pública nacional e información sobre la venta de Servidores VIT, pueden comunicarse a través de</p>
+                    <ul class="nav-sales ">
+                        <li><i class="fas fa-phone-alt pr-2 pb-2 "></i><a href="# ">(+58) 04166134569</a></li>
+                        <li><i class="fas fa-envelope pr-2 pb-2 "></i><a href="mailto:comercialización@vit.gob.ve ">comercializacion@vit.gob.ve</a></li>
+                        <li><i class="fas fa-globe pr-2 pb-2 "></i><a href="# ">Completa el Formulario</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sales-->
+
+    <!--about-us -->
+    <div id="about-us " class="section-about-us d-flex justify-content-center align-items-center pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 "> </div>
+                <div class="col-md-6 ">
+                    <h3 class="text-right pt-5 ">Acerca de Venezolana de Industria Tecnológica</h3>
+                    <p class="text-justify pt-5 ">Somos la principal industria productora de herramientas tecnológicas de Venezuela, producimos herramientas tecnológicas personales y soluciones informáticas de alta gama, para almacenamiento y administración de servicios</p>
+                    <p class="text-justify pb-5 ">Estamos ubicados al norte de Venezuela, con acceso estratégico y directo al Mar Caribe. </p>
+                    <div class="text-right pb-5 ">
+                        <a href="web-about-us.html " class="btn btn-light text-dark ">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about-us -->
+
+    <!--products-->
+    <div id="products " class="section-products d-flex justify-content-center align-items-center pt-5 pb-5">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 text-center pt-5 pb-5 ">
+                    <h3>Productos</h3>
+                </div>
+            </div>
+            <div class="autoplay row pb-5 ">
+                <div class="col-md-4 col-sm-8">
+                    <a href="web-products-detail.html " class="products-card-container ">
+                        <div class="card border-0 shadow-sm card-products ">
+                            <div class="card-img ">
+                                <img src="img/ME2250.png " class="card-img-top " alt="... ">
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text text-muted ">Categoría - Sub-Categoría</p>
+                                <h5 class="card-title ">ME2250</h5>
+                                <p class="text-price ">$5.000.000 Ptr</p>
+                                <div class="quantify d-flex">
+                                    <form action=" ">
+                                        <div class="form-row ">
+                                            <div class="form-group col-md-4 d-flex align-items-center justify-conter-center">
+                                                <button class="btn btn-primary btn-less " id="less "><i class="fas fa-minus "></i></button>
+                                                <input type="text " class="form-control text-center btn-quantity" id="quantify-1 " value="1 ">
+                                                <button class="btn btn-primary btn-plus " id="plus "><i class="fas fa-plus "></i></button>
+                                            </div>
+                                            <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end">
+                                                <button class="btn btn-primary" type="submit "><i class="fab fa-opencart "></i> Añadir al Carrito</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-8">
+                    <a href="web-products-detail.html " class="products-card-container ">
+                        <div class="card border-0 shadow-sm card-products ">
+                            <div class="card-img ">
+                                <img src="img/MP1420.png " class="card-img-top " alt="... ">
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text text-muted ">Categoría - Sub-Categoría</p>
+                                <h5 class="card-title ">MP1420</h5>
+                                <p class="text-price ">$5.000.000 Ptr</p>
+                                <div class="quantify d-flex ">
+                                    <form action=" ">
+                                        <div class="form-row ">
+                                            <div class="form-group col-md-4 d-flex align-items-center justify-content-start ">
+                                                <button class="btn btn-primary btn-less " id="less "><i class="fas fa-minus "></i></button>
+                                                <input type="text " class="form-control text-center btn-quantity" id="quantify-2 " value="1 ">
+                                                <button class="btn btn-primary btn-plus " id="plus "><i class="fas fa-plus "></i></button>
+                                            </div>
+                                            <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end ">
+                                                <button class="btn btn-primary " type="submit "><i class="fab fa-opencart "></i> Añadir al Carrito</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-8">
+                    <a href="web-products-detail.html " class="products-card-container ">
+                        <div class="card border-0 shadow-sm card-products ">
+                            <div class="card-img ">
+                                <img src="img/MP3310.jpg " class="card-img-top " alt="... ">
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text text-muted ">Categoría - Sub-Categoría</p>
+                                <h5 class="card-title ">MP3310</h5>
+                                <p class="text-price ">$5.000.000 Ptr</p>
+                                <div class="quantify d-flex ">
+                                    <form action=" ">
+                                        <div class="form-row ">
+                                            <div class="form-group col-md-4 d-flex align-items-center justify-content-start ">
+                                                <button class="btn btn-primary btn-less " id="less "><i class="fas fa-minus "></i></button>
+                                                <input type="text " class="form-control text-center btn-quantity" id="quantify-3 " value="1 ">
+                                                <button class="btn btn-primary btn-plus " id="plus "><i class="fas fa-plus "></i></button>
+                                            </div>
+                                            <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end ">
+                                                <button class="btn btn-primary " type="submit "><i class="fab fa-opencart "></i> Añadir al Carrito</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-8">
+                    <a href="web-products-detail.html " class="products-card-container ">
+                        <div class="card border-0 shadow-sm card-products ">
+                            <div class="card-img ">
+                                <img src="img/SR2280M4-1.jpg" class="card-img-top " alt="... ">
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text text-muted ">Categoría - Sub-Categoría</p>
+                                <h5 class="card-title ">SR2280M4-V1</h5>
+                                <p class="text-price ">$5.000.000 Ptr</p>
+                                <div class="quantify d-flex ">
+                                    <form action=" ">
+                                        <div class="form-row ">
+                                            <div class="form-group col-md-4 d-flex align-items-center justify-content-start ">
+                                                <button class="btn btn-primary btn-less " id="less "><i class="fas fa-minus "></i></button>
+                                                <input type="text " class="form-control text-center btn-quantity" id="quantify-4 " value="1 ">
+                                                <button class="btn btn-primary btn-plus " id="plus "><i class="fas fa-plus "></i></button>
+                                            </div>
+                                            <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end ">
+                                                <button class="btn btn-primary " type="submit "><i class="fab fa-opencart "></i> Añadir al Carrito</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-8">
+                    <a href="web-products-detail.html" class="products-card-container ">
+                        <div class="card border-0 shadow-sm card-products">
+                            <div class="card-img ">
+                                <img src="img/T4310.jpg " class="card-img-top " alt="... ">
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text text-muted ">Categoría - Sub-Categoría</p>
+                                <h5 class="card-title ">T4310</h5>
+                                <p class="text-price ">$5.000.000 Ptr</p>
+                                <div class="quantify d-flex ">
+                                    <form action=" ">
+                                        <div class="form-row ">
+                                            <div class="form-group col-md-4 d-flex align-items-center justify-content-start ">
+                                                <button class="btn btn-primary btn-less " id="less "><i class="fas fa-minus "></i></button>
+                                                <input type="text" class="form-control text-center btn-quantity" id="quantify-5 " value="1 ">
+                                                <button class="btn btn-primary btn-plus " id="plus "><i class="fas fa-plus "></i></button>
+                                            </div>
+                                            <div class="form-group col-md-8 d-flex align-items-center justify-content-lg-end ">
+                                                <button class="btn btn-primary " type="submit "><i class="fab fa-opencart "></i> Añadir al Carrito</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end products-->
+
+    <!--category-->
+    <div id="categoy " class="section-category d-flex justify-content-center align-items-center pb-5 pt-5 ">
+        <div class="container ">
+            <div class="row pb-5 pt-5">
+                <div class="col-md-12"></div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 text-center pb-5 pt-5 text-white">
+                    <h3>Categorias</h3>
+                </div>
+            </div>
+            <div class="row autoplay pb-5 ">
+                <div class="col-md-4 ">
+                    <a href="web-category.html ">
+                        <img src="img/icon-allinone.png " class="d-block w-100 " alt="... ">
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="web-category.html ">
+                        <img src="img/icon-pc.png " class="d-block w-100 " alt="... ">
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="web-category.html ">
+                        <img src="img/icon-servidores.png " class="d-block w-100 " alt="... ">
+                    </a>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="web-category.html ">
+                        <img src="img/icon-tablet.png " class="d-block w-100 " alt="... ">
+                    </a>
+                </div>
+            </div>
+            <div class="row pb-5 pt-5 ">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </div>
+    <!--end category-->
+
+    <!--contact-->
+    <div id="contact" class="container-contact pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 text-center pt-5 mb-5 ">
+                    <h3>Contáctanos</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 d-flex align-items-center justify-content-center ">
+                    <form>
+                        <div class="form-row ">
+                            <div class="form-group col-md-6 mb-3 ">
+                                <label for="name ">Nombre</label>
+                                <input type="text " class="form-control " id="name " name="name " required>
+                            </div>
+                            <div class="form-group col-md-6 mb-3 ">
+                                <label for="name ">Apellido</label>
+                                <input type="text " class="form-control " id="name " name="name " required>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-12 mb-3 ">
+                                <label for="quantity ">Correo Electrónico</label>
+                                <input type="text " class="form-control " id="quantity " name="quantity " required>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-12 mb-3 ">
+                                <label for="quantity ">Asunto</label>
+                                <input type="text " class="form-control " id="quantity " name="quantity " required>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-12 mb-3 ">
+                                <label for="description-banner ">Mensaje</label>
+                                <textarea class="form-control " id="description-banner " rows="6 " name="description-banner " required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-12 mb-3 pb-5 text-center ">
+                                <button class="btn btn-primary " type="submit ">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end contact-->
+
+    <!--footer-->
+    <footer id="footer " class="footer text-light d-flex align-items-center justify-content-center pt-5 pb-5 ">
+        <div class="container ">
+            <!--footer top-->
+            <div class="row text-justify pt-5 ">
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Venezolana de Industria Tecnológica</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p>Somos la principal industria productora de herramientas tecnológicas de Venezuela, producimos herramientas tecnológicas personales y soluciones informáticas de alta gama. </p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 icon-rs mb-3 ">
+                            <i class="fab fa-facebook "></i>
+                            <i class="fab fa-instagram pl-2 "></i>
+                            <i class="fab fa-youtube pl-2 "></i>
+                            <i class="fab fa-twitter pl-2 "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Contáctanos</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">Paraguaná. Edo Falcón</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0269-2487694 / 0269-2462500</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">San Antonio. Edo Miranda</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0212-3731554</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-map-marker-alt "></i>
+                            <p class="pl-1 ">Chuao. Distrito Capital</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0212-9597138</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Explorar</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="web-about-us.html ">Sobre Nosotros</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="#" data-toggle="modal" data-target="#myModal">Iniciar Sesión</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><a href="web-registry-user.html ">Regitrarse</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <p><strong>Soporte</strong></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 d-flex align-middle ">
+                            <i class="fas fa-phone-alt "></i>
+                            <p class="pl-1 ">(+58) 0800-4636848</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <i class="fas fa-envelope "></i>
+                            <a href="mailto:atencionalcliente@vit.gob.ve ">atencionalcliente@vit.gob.ve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end footer top-->
+            <!--footer botttonp-->
+            <div class="row footer-above pt-5 ">
+                <div class="col-md-10 text-left ">
+                    <p>&copy; 2020 Venezolana de Industria Tecnológica</p>
+                </div>
+                <div class="col-md-2 text-right ">
+                    <p><a href="# " class="mr-0 btn-above "><i class="far fa-caret-square-up "></i></a></p>
+                </div>
+            </div>
+            <!--end footer botttonp-->
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <script type="text/javascript " src="js/jquery-3.5.1.slim.min.js "></script>
+    <script type="text/javascript " src="js/popper.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="js/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript " src="js/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript " src="js/slick.min.js "></script>
+    <script type="text/javascript " src="js/setting.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+
+    <script type="text/javascript ">
+        $(window).scroll(function() {
+            if ($("#nav ").offset().top > 120) {
+                $("#nav ").addClass("bg-primary");
+                $("#nav ").addClass("navbar-dark");
+                $(".navbar-logo").addClass("active");
+            } else {
+                $("#nav ").removeClass("bg-primary");
+                $("#nav ").removeClass("navbar-dark");
+                $(".navbar-logo").removeClass("active");
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            const less = $('.btn-less');
+            const plus = $('.btn-plus');
+            const input = $('.btn-quantity');
+            less.click(function(e) {
+                e.preventDefault();
+                var value = input.val();
+                if (value > 1) {
+                    value--;
+                }
+                input.val(value);
+            });
+
+            plus.click(function(e) {
+                e.preventDefault();
+                var value = input.val();
+                value++;
+                input.val(value);
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>
